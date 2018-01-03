@@ -1,11 +1,11 @@
 {
   "name": "Noxys_StackSizeMultiplier",
-  "version": "0.0.3",
-  "factorio_version": "0.15",
+  "version": "0.0.4",
+  "factorio_version": "0.16",
   "title": "Noxys StackSizeMultiplier",
   "author": "Noxy",
   "contact": "donotcontactme@example.com",
   "homepage": "https://mods.factorio.com/",
   "description": "Change stack size of most items.",
-  "dependencies": ["base >= 0.15.0"]
+  "dependencies": ["base >= 0.16.0"]
 }
