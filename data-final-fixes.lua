@@ -1,10 +1,12 @@
 local itemStackSizeMultiplier = settings.startup["Noxys_StackSizeMultiplier-multiplier"].value
 
 local ignore = {
-	["blueprint"] = true,
-	["blueprint-book"] = true,
+	["blueprint"]           = true,
+	["blueprint-book"]      = true,
+	["deconstruction-item"] = true,
+	["selection-tool"]      = true,
 	["item-with-inventory"] = true,
-	["armor"] = true,
+	["armor"]               = true,
 }
 
 for _, dat in pairs(data.raw) do
