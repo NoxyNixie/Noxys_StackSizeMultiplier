@@ -12,7 +12,7 @@ local ignore = {
 for _, dat in pairs(data.raw) do
 	for _,item in pairs(dat) do
 		if item.stack_size and type(item.stack_size) == "number" then
-			if not ignore[item.type] then
+			if not ignore[item.type] and (item.stackable == nil or item.stackable) then
 				item.stack_size = item.stack_size * itemStackSizeMultiplier
 			end
 		end
