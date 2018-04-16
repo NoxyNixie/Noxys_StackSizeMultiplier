@@ -18,3 +18,10 @@ for _, dat in pairs(data.raw) do
 		end
 	end
 end
+
+local tweakbots = settings.startup["Noxys_StackSizeMultiplier-tweakbots"].value
+if tweakbots then
+	for _,v in pairs(data.raw["construction-robot"]) do
+		v.max_payload_size = v.max_payload_size * itemStackSizeMultiplier
+	end
+end

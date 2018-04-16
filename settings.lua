@@ -9,8 +9,15 @@ data:extend({
 		maximum_value = 1000,
 		order = "a",
 	},
+	{
+		type = "bool-setting",
+		name = "Noxys_StackSizeMultiplier-tweakbots",
+		setting_type = "startup",
+		default_value = false,
+		order = "b",
+	},
 	-- Global
 
 	-- Per user
-	
+
 })
