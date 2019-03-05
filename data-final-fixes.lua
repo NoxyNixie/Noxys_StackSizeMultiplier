@@ -6,6 +6,7 @@ local ignore = {
 	["deconstruction-item"] = true,
 	["selection-tool"]      = true,
 	["item-with-inventory"] = true,
+	["upgrade-item"]        = true,
 	["armor"]               = true,
 }
 
