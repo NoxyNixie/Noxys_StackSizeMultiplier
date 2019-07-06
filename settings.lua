@@ -1,10 +1,10 @@
 data:extend({
 	-- Startup
 	{
-		type = "int-setting",
+		type = "double-setting",
 		name = "Noxys_StackSizeMultiplier-multiplier",
 		setting_type = "startup",
-		minimum_value = 1,
+		minimum_value = 0.001,
 		default_value = 20,
 		maximum_value = 1000,
 		order = "a",

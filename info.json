@@ -1,11 +1,11 @@
 {
   "name": "Noxys_StackSizeMultiplier",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "factorio_version": "0.17",
-  "title": "Noxys StackSizeMultiplier",
+  "title": "Noxys Stack Size Multiplier",
   "author": "Noxy",
   "contact": "not.a.valid.email.address@example.com",
   "homepage": "https://mods.factorio.com/user/_noxy_",
-  "description": "Change stack size of most items.",
+  "description": "Allows you to change the stack size of most items. Using a number larger than 1 increases stack sizes. Using a decimal number below 1 decreases stack sizes (with a minimum of 1 item per stack).",
   "dependencies": ["base >= 0.17.0"]
 }
