@@ -16,6 +16,13 @@ data:extend({
 		default_value = false,
 		order = "b",
 	},
+	{
+		type = "bool-setting",
+		name = "Noxys_StackSizeMultiplier-tweaklogibots",
+		setting_type = "startup",
+		default_value = false,
+		order = "b",
+	},
 	-- Global
 
 	-- Per user
