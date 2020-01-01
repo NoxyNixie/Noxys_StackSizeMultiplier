@@ -4,9 +4,9 @@ data:extend({
 		type = "double-setting",
 		name = "Noxys_StackSizeMultiplier-multiplier",
 		setting_type = "startup",
-		minimum_value = 0.001,
+		minimum_value = 0.00001,
 		default_value = 20,
-		maximum_value = 1000,
+		maximum_value = 4294967295,
 		order = "a",
 	},
 	{
