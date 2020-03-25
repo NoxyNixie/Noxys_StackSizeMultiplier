@@ -6,7 +6,7 @@ data:extend({
 		setting_type = "startup",
 		minimum_value = 0.00001,
 		default_value = 20,
-		maximum_value = 4294967295,
+		maximum_value = 2147483647,
 		order = "a",
 	},
 	{
