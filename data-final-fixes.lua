@@ -12,9 +12,18 @@ local ignore = {
 	["armor"]               = true,
 }
 
+local function is_stackable(item)
+	if not item.flags then return true end
+	if type(item.flags) ~= "table" then return true end
+	for _,v in pairs(item.flags) do
+		if v == "not-stackable" then return false end
+	end
+	return true
+end
+
 for _, dat in pairs(data.raw) do
 	for _,item in pairs(dat) do
-		if item.stack_size and type(item.stack_size) == "number" then
+		if item.stack_size and type(item.stack_size) == "number" and is_stackable(item) then
 			if not ignore[item.type] and (item.stackable == nil or item.stackable) then
 				item.stack_size = max(1, min(2147483647, item.stack_size * itemStackSizeMultiplier))
 			end
