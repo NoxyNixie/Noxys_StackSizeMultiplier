@@ -1,7 +1,7 @@
 local itemStackSizeMultiplier = settings.startup["Noxys_StackSizeMultiplier-multiplier"].value
 local max, min = math.max, math.min
 
-local ignore = {
+local ignore_by_type = {
 	["blueprint"]           = true,
 	["blueprint-book"]      = true,
 	["deconstruction-item"] = true,
@@ -10,6 +10,10 @@ local ignore = {
 	["item-with-inventory"] = true,
 	["upgrade-item"]        = true,
 	["armor"]               = true,
+}
+
+local ignora_by_name = {
+--	["satellite"] = true,
 }
 
 local function is_stackable(item)
@@ -24,7 +28,7 @@ end
 for _, dat in pairs(data.raw) do
 	for _,item in pairs(dat) do
 		if item.stack_size and type(item.stack_size) == "number" and is_stackable(item) then
-			if not ignore[item.type] and (item.stackable == nil or item.stackable) then
+			if not ignore_by_type[item.type] and not ignora_by_name[item.name] and (item.stackable == nil or item.stackable) then
 				item.stack_size = max(1, min(2147483647, item.stack_size * itemStackSizeMultiplier))
 			end
 		end
