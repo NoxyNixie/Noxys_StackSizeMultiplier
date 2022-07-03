@@ -17,6 +17,9 @@ local ignora_by_name = {
 }
 
 local function is_stackable(item)
+	if settings.startup["Noxys_StackSizeMultiplier-ignoreonestacks"].value then
+		if item.stack_size and item.stack_size == 1 then return false end
+	end
 	if not item.flags then return true end
 	if type(item.flags) ~= "table" then return true end
 	for _,v in pairs(item.flags) do
