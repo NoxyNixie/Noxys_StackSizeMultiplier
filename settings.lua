@@ -23,6 +23,13 @@ data:extend({
 		default_value = false,
 		order = "b",
 	},
+	{
+		type = "bool-setting",
+		name = "Noxys_StackSizeMultiplier-ignoreonestacks",
+		setting_type = "startup",
+		default_value = false,
+		order = "c",
+	},
 	-- Global
 
 	-- Per user
