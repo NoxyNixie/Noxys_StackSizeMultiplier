@@ -1,6 +1,6 @@
 {
 	"name": "Noxys_StackSizeMultiplier",
-	"version": "0.4.3",
+	"version": "0.4.4",
 	"factorio_version": "1.1",
 	"title": "Noxys Stack Size Multiplier",
 	"author": "Noxy",
@@ -9,6 +9,8 @@
 	"description": "Allows you to change the stack size of most items. Using a number larger than 1 increases stack sizes. Using a decimal number below 1 decreases stack sizes (with a minimum of 1 item per stack).",
 	"dependencies": [
 		"base >= 1.1.0",
-    "? techno"
+    "? techno",
+		"? Krastorio2",
+		"? space-exploration-postprocess"
 	]
 }
