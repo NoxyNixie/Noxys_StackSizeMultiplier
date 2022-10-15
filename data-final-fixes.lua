@@ -10,6 +10,7 @@ local ignore_by_type = {
 	["item-with-inventory"] = true,
 	["upgrade-item"]        = true,
 	["armor"]               = true,
+	["spidertron-remote"]   = true,
 }
 
 local ignora_by_name = {
