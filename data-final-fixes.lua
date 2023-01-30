@@ -50,3 +50,7 @@ if settings.startup["Noxys_StackSizeMultiplier-tweaklogibots"].value then
 		v.max_payload_size = max(1, min(2147483647, v.max_payload_size * itemStackSizeMultiplier))
 	end
 end
+
+if mods["space-exploration"] then
+  ignore_by_name["rocket-fuel"] = true
+end
