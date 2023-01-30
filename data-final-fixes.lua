@@ -17,6 +17,10 @@ local ignora_by_name = {
 --	["satellite"] = true,
 }
 
+if mods["space-exploration"] then
+  ignore_by_name["rocket-fuel"] = true
+end
+
 local function is_stackable(item)
 	if settings.startup["Noxys_StackSizeMultiplier-ignoreonestacks"].value then
 		if item.stack_size and item.stack_size == 1 then return false end
@@ -49,8 +53,4 @@ if settings.startup["Noxys_StackSizeMultiplier-tweaklogibots"].value then
 	for _,v in pairs(data.raw["logistic-robot"]) do
 		v.max_payload_size = max(1, min(2147483647, v.max_payload_size * itemStackSizeMultiplier))
 	end
-end
-
-if mods["space-exploration"] then
-  ignore_by_name["rocket-fuel"] = true
 end
