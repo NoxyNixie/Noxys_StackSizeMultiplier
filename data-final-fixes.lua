@@ -17,6 +17,10 @@ local ignora_by_name = {
 --	["satellite"] = true,
 }
 
+if mods["space-exploration"] then
+  ignora_by_name["rocket-fuel"] = true
+end
+
 local function is_stackable(item)
 	if settings.startup["Noxys_StackSizeMultiplier-ignoreonestacks"].value then
 		if item.stack_size and item.stack_size == 1 then return false end
