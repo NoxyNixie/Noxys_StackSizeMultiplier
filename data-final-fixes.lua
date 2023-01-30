@@ -18,7 +18,7 @@ local ignora_by_name = {
 }
 
 if mods["space-exploration"] then
-  ignore_by_name["rocket-fuel"] = true
+  ignora_by_name["rocket-fuel"] = true
 end
 
 local function is_stackable(item)
